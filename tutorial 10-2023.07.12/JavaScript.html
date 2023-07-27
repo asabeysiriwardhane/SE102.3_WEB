@@ -1,0 +1,11 @@
+function removeSelectedItem() {
+  // Get the select element by its ID
+  const dropdown = document.getElementById("myDropdown");
+
+  // Check if any option is selected
+  const selectedIndex = dropdown.selectedIndex;
+  if (selectedIndex !== -1) {
+    // Remove the selected option
+    dropdown.remove(selectedIndex);
+  }
+}
