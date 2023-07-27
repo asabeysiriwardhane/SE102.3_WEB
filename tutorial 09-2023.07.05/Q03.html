@@ -1,0 +1,45 @@
+//html
+<!-- Assume you have a table with the id "myTable" -->
+<table id="myTable">
+  <tr>
+    <td>row1</td>
+    <td>cell1</td>
+    <td>Row1</td>
+    <td>cell2</td>
+  </tr>
+  <tr>
+    <td>row2</td>
+    <td>cell1Row2</td>
+    <td>cell2</td>
+  </tr>
+</table>
+
+
+
+//js
+
+function addRowToTable() {
+  // Get the table by its ID
+  const table = document.getElementById("myTable");
+
+  // Create a new row and cells
+  const newRow = table.insertRow();
+
+  // Add content to the new cells
+  const newCell1 = newRow.insertCell();
+  const newCell2 = newRow.insertCell();
+
+  // Add text to the cells (you can replace these with desired content)
+  newCell1.innerText = "new cell1";
+  newCell2.innerText = "new cell2";
+}
+
+// Call the function to add a new row with cells to the table
+addRowToTable();
+
+
+
+
+
+
+
